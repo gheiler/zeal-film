@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+ Name: Gabriel Heiler
+ Site: http://www.gabrielheiler.com
+
+# THANKS
+
+  PatrickJS -- @gdi2290
+  AngularClass -- @AngularClass
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3
+  Angular4, TypeScript, Webpack
