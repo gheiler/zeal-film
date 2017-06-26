@@ -126,39 +126,41 @@
 <body>
   <app ng-version="4.1.3">
     <main>
-      <router-outlet></router-outlet><home _nghost-c1=""><div _ngcontent-c1="">
-    <div _ngcontent-c1="" class="main-content">
-        <div _ngcontent-c1="" class="orange-box">
-            <div _ngcontent-c1="" class="main-title">
-                ZEAL FILM
-            </div>
-            <div _ngcontent-c1="" class="side-title orange">
-                <div _ngcontent-c1="" class="funny-font"> 
-                    at your service
+        <router-outlet></router-outlet>
+        <home _nghost-c1="">
+            <div _ngcontent-c1="">
+                <div _ngcontent-c1="" class="main-content">
+                    <div _ngcontent-c1="" class="orange-box">
+                        <div _ngcontent-c1="" class="main-title">
+                            ZEAL FILM
+                        </div>
+                        <div _ngcontent-c1="" class="side-title orange">
+                            <div _ngcontent-c1="" class="funny-font"> 
+                                at your service
+                            </div>
+                        </div>
+                    </div>
+                    <div _ngcontent-c1="" class="square-font">
+                        to present your business
+                    </div>
+                </div>
+                <div _ngcontent-c1="" class="side-content">
+                    <div _ngcontent-c1="" class="play-btn-container">
+                        <button _ngcontent-c1="" class="play-button" id="youtube-player"></button>
+                    </div>
+                    <div _ngcontent-c1="" class="orange contact-info">
+                        <ul _ngcontent-c1="">
+                            <li _ngcontent-c1="">Medappa Chreanda</li>
+                            <li _ngcontent-c1="">at Square Haus</li>
+                            <li _ngcontent-c1="">Bülowstr. 6</li>
+                            <li _ngcontent-c1="">10783 Berlin</li>
+                            <li _ngcontent-c1=""><a _ngcontent-c1="" href="mailto:office@zeal-film.de">office@zeal-film.de</a></li>
+                            <li _ngcontent-c1=""><a _ngcontent-c1="" href="tel:+4901797481018">+49 (0) 0179 748 10 18</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div _ngcontent-c1="" class="square-font">
-            to present your business
-        </div>
-    </div>
-    <div _ngcontent-c1="" class="side-content">
-        <div _ngcontent-c1="" class="play-btn-container">
-            <button _ngcontent-c1="" class="play-button" id="youtube-player"></button>
-        </div>
-        <div _ngcontent-c1="" class="orange contact-info">
-            <ul _ngcontent-c1="">
-                <li _ngcontent-c1="">Medappa Chreanda</li>
-                <li _ngcontent-c1="">at Square Haus</li>
-                <li _ngcontent-c1="">Bülowstr. 6</li>
-                <li _ngcontent-c1="">10783 Berlin</li>
-                <li _ngcontent-c1=""><a _ngcontent-c1="" href="mailto:office@zeal-film.de">office@zeal-film.de</a></li>
-                <li _ngcontent-c1=""><a _ngcontent-c1="" href="tel:+4901797481018">+49 (0) 0179 748 10 18</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-</home>
+        </home>
     </main>
     <div id="player" style="display: none;"></div>
   </app>
