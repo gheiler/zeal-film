@@ -205,7 +205,7 @@
     }
 
     function setupListener (){
-      $('youtube-player').addEventListener('click', playFullscreen);
+      $('#youtube-player').addEventListener('click', playFullscreen);
     }
 
     function playFullscreen (){
