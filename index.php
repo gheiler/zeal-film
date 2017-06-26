@@ -192,7 +192,7 @@
         width: '1',
         videoId: 'amRFNKKCHgI',
         events: {
-          'onReady': onPlayerReady
+          'onReady': onPlayerReady,
           'onStateChange': onPlayerStateChange
         }
       });
