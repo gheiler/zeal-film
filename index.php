@@ -160,6 +160,7 @@
 </div>
 </home>
     </main>
+    <div id="player" style="display: none;"></div>
   </app>
 
   <!-- Google Analytics: change UA-71073175-1 to be your site's ID -->
