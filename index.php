@@ -214,7 +214,7 @@
 
     function exitHandler()
     {
-        if (document.webkitIsFullScreen === false || document.mozFullScreen === false || document.msFullscreenElement === false))
+        if (document.webkitIsFullScreen === false || document.mozFullScreen === false || document.msFullscreenElement === false)
         {
             $('#player').style.display = 'none';
         }
