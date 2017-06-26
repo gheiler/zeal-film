@@ -85,7 +85,7 @@
     text-align: center;
     margin: 0 auto; }
     .play-btn-container .play-button {
-    background: url(/assets/img/play.png);
+    background: url('src/assets/img/play.png');
     width: 100px;
     background-size: cover;
     height: 100px;
@@ -183,21 +183,19 @@
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    setTimeout(function (){
+    function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
         height: '0',
         width: '0',
-        videoId: 'amRFNKKCHgI'
+        videoId: 'amRFNKKCHgI',
+        events: {
+          'onReady': onPlayerReady
+        }
       });
-      setTimeout(function () {
-        var player = event.target;
-        iframe = $('#player');
-        setupListener();
-      }, 1000);
-    }, 1000);
+    }
 
     // when ready, wait for clicks
-    function onPlayerReadyy(event) {
+    function onPlayerReady(event) {
       var player = event.target;
       iframe = $('#player');
       setupListener(); 

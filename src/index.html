@@ -52,18 +52,16 @@
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    setTimeout(function (){
+    function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
         height: '0',
         width: '0',
-        videoId: 'amRFNKKCHgI'
+        videoId: 'amRFNKKCHgI',
+        events: {
+          'onReady': onPlayerReady
+        }
       });
-      setTimeout(function () {
-        var player = event.target;
-        iframe = $('#player');
-        setupListener();
-      }, 1000);
-    }, 1000);
+    }
 
     // when ready, wait for clicks
     function onPlayerReadyy(event) {
