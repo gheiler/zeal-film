@@ -205,11 +205,24 @@
     }
 
     function setupListener (){
-      $('#youtube-player').addEventListener('click', playFullscreen);
+        $('#youtube-player').addEventListener('click', playFullscreen);
+        document.addEventListener('webkitfullscreenchange', exitHandler, false);
+        document.addEventListener('mozfullscreenchange', exitHandler, false);
+        document.addEventListener('fullscreenchange', exitHandler, false);
+        document.addEventListener('MSFullscreenChange', exitHandler, false);
     }
+
+    function exitHandler()
+    {
+        if (document.webkitIsFullScreen === false || document.mozFullScreen === false || document.msFullscreenElement === false))
+        {
+            $('#player').style.display = 'none';
+        }
+    }    
 
     function playFullscreen (){
       player.playVideo();//won't work on mobile
+      $('#player').style.display = 'block';
       
       var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
       if (requestFullScreen) {
