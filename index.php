@@ -193,6 +193,7 @@
         videoId: 'amRFNKKCHgI',
         events: {
           'onReady': onPlayerReady
+          'onStateChange': onPlayerStateChange
         }
       });
     }
@@ -202,6 +203,13 @@
       var player = event.target;
       iframe = $('#player');
       setupListener(); 
+    }
+
+    // when video ends
+    function onPlayerStateChange(event) {        
+        if(event.data === 0) {
+            goOutFromVideo();
+        }
     }
 
     function setupListener (){
@@ -216,9 +224,17 @@
     {
         if (document.webkitIsFullScreen === false || document.mozFullScreen === false || document.msFullscreenElement === false)
         {
-            $('#player').style.display = 'none';
+            player.stopVideo();
+            goOutFromVideo();
         }
-    }    
+    }
+
+    function goOutFromVideo(){
+        $('#player').style.display = 'none';
+        if (document.exitFullscreen) {
+            document.exitFullscreen(); 
+        }
+    }
 
     function playFullscreen (){
       player.playVideo();//won't work on mobile
